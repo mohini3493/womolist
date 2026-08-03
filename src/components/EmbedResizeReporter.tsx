@@ -11,6 +11,8 @@ export default function EmbedResizeReporter() {
   useEffect(() => {
     if (window.parent === window) return;
 
+    document.documentElement.classList.add("is-embedded");
+
     const reportHeight = () => {
       // scrollHeight is spec-guaranteed to be >= clientHeight (the iframe's own
       // viewport), so it can only ever grow. Measure the actual content box
