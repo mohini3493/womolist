@@ -14,7 +14,7 @@ function initials(name: string) {
 export default function ProfileCard({ profile }: { profile: Profile }) {
   return (
     <Link
-      href={`/profile/${profile.slug}`}
+      href={`/list/${profile.slug}`}
       className="group relative flex aspect-[3/4] w-full overflow-hidden rounded-3xl bg-primary-tint shadow-sm transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-primary/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
     >
       {profile.photo ? (
